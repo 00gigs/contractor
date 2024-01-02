@@ -1,38 +1,93 @@
-.App {
+
+
+
+body{
+  background-image: url('./assets/backgroundlarge.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.history-cont{
   text-align: center;
+  font-size: medium; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about{
+  position: relative;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: .5px solid black;
+  background: #fafbf5;
+  opacity: .35;
+  margin: 0 1rem;
+  z-index: -1;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about h1{
+  position: relative;
+  z-index: 1;
+}
+.about p{
+  position: relative;
+  z-index: 1;
+  margin: 0 1.01rem;
+}
+
+/* Add this to your CSS */
+.custom-carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);  /* Adjust the alpha channel (last value) for the desired transparency */
+  color: #fff;  /* Set text color to make it readable on the background */
+  padding: 20px;  /* Adjust padding as needed */
+  
+}
+
+.accord{
+  margin: 0 1rem;
+}
+
+.cta{
+text-align: center;
+margin: 1rem 0;
+}
+
+
+.hero-bg{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.left-side-hero {
+  position: relative;
+  max-width: 50%;
+  margin-right: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-side-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fafbf5;
+  border: .1px solid black;
+  opacity: .35;
+  z-index: -1;
+}
+
+.left-side-hero h1 {
+  position: relative;
+  z-index: 1;
 }
