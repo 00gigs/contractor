@@ -5,11 +5,6 @@ import Col from "react-bootstrap/Col";
 
 import Row from "react-bootstrap/Row";
 
-import phone from "./assets/icons8-phone-50.png";
-import person from "./assets/icons8-person-30.png";
-import company from "./assets/icons8-company-50.png";
-import email from "./assets/icons8-email-30.png";
-import descr from "./assets/icons8-description-64.png";
 
 function Hero() {
   const Handleclick = () => {
@@ -20,9 +15,7 @@ function Hero() {
     <div className="hero-bg">
       <div className="left-side-hero">
         <h1 class="display-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam
-          voluptate earum magnam optio deserunt excepturi nihil odio adipisci
-          necessitatibus, natus, ab quam explicabo.
+        Are you ready to turn your dream home into a tangible masterpiece? Look no further! At Dream Homes Construction, we are committed to crafting exceptional living spaces that perfectly align with your unique lifestyle and preferences.
         </h1>
       </div>
       <div className="right-side-hero">

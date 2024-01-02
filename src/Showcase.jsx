@@ -17,8 +17,8 @@ function Showcase() {
 
     return(
         <div className="accord">
-        <Accordion >
-            <Accordion.Item eventKey="0">
+        <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="0" flush >
                 <Accordion.Header>kitchens</Accordion.Header>
                     <Accordion.Body>
                         <Carousel>
@@ -40,7 +40,7 @@ function Showcase() {
     
                     </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="1" flush>
                 <Accordion.Header>Bathrooms</Accordion.Header>
                     <Accordion.Body>
                         <Carousel>
@@ -62,7 +62,7 @@ function Showcase() {
     
                     </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="2" flush>
                 <Accordion.Header>Decks</Accordion.Header>
                     <Accordion.Body>
                         <Carousel>
