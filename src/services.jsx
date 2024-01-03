@@ -4,59 +4,79 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import thumb from "./assets/BuildaHouse-730x485-1.jpg";
-
+import { Link } from "react-router-dom";
 function Services() {
   return (
     <div className="grid">
-      <Container>
-        <Row>
-          <Col style={{ border: "1px solid black" }} md={6}>
+      <Container fluid className="mx-auto" style={{display:"grid", justifyItems:'center'}}>
+        <Row className="justify-content-around">
+          <Col md={6}>
             <Card className="card" style={{ width: "300px" }}>
               <Card.Img variant="top" src={thumb} />
               <Card.Body>
                 <Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Title>
+                <Link to="/services">
                 <Button>select</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
-          <Col style={{ border: "1px solid black" }} md={6}>
+          <Col md={6}>
             <Card className="card" style={{ width: "300px" }}>
               <Card.Img variant="top" src={thumb} />
               <Card.Body>
                 <Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Title>
+                <Link to="/services">
                 <Button>select</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
         </Row>
         <Row>
-          <Col style={{ border: "1px solid black" }} sm={4}>
-            <Card className="card" style={{ width: "300px" }}>
+          <Col sm={4}>
+            <Card className="card" style={{  width: "300px"}}>
               <Card.Img variant="top" src={thumb} />
               <Card.Body>
                 <Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Title>
+                <Link to="/services">
                 <Button>select</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
-          <Col style={{ border: "1px solid black" }} sm={4}>
-            <Card className="card" style={{ width: "300px" }}>
+          <Col sm={4}>
+            <Card className="card" style={{ width: "300px"  }}>
               <Card.Img variant="top" src={thumb} />
               <Card.Body>
                 <Card.Title>
                   <Card.Text></Card.Text>
                 </Card.Title>
+                <Link to="/services">
                 <Button>select</Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
-          <Col style={{ border: "1px solid black" }} sm={4}></Col>
+          <Col sm={4}>
+          <Card  className="card" style={{ width: "300px"}}>
+              <Card.Img variant="top" src={thumb} />
+              <Card.Body>
+                <Card.Title>
+                  <Card.Text></Card.Text>
+                </Card.Title>
+                <Link to="/services">
+                <Button>select</Button>
+                </Link>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     </div>

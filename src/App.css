@@ -1,5 +1,7 @@
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   background-image: url('./assets/backgroundlarge.jpeg');
@@ -28,7 +30,7 @@ body{
   left: 0;
   border: .1px solid black;
   background: #fafbf5;
-  opacity: .35;
+  opacity: .88;
   margin: 0 1rem;
   z-index: -1;
   
@@ -65,8 +67,9 @@ font-family: 'Noto Sans', sans-serif;;
 }
 
 .cta{
-text-align: center;
-margin: 1rem 0;
+ display: grid;
+ grid: 2;
+ margin: 1rem;
 }
 
 
@@ -79,7 +82,7 @@ margin: 1rem 0;
 .left-side-hero {
   position: relative;
   max-width: 50%;
-  margin-right: 1rem;
+  margin-right: 7rem;
   font-style: italic;
 }
 
@@ -92,22 +95,49 @@ margin: 1rem 0;
   left: 0;
   background: #fafbf5;
   border: .1px solid black;
-  opacity: .35;
+  opacity: .88;
   z-index: -1;
 }
 
 .left-side-hero h1 {
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 
-.grid{
-  background-color: #fafbf5;
-  margin: 0 1rem;
-  display: flex
-}
+
 
 .card{
- margin-left: 9rem;
+align-items: center;
+margin-bottom: 1rem;
+
+}
+
+
+.booking-pg{
+ 
+}
+
+
+.floorplan-pg{
+
+}
+
+
+.homes-pg > p{
+
+}
+
+.portfolio-pg{
+
+}
+
+.reno-pg-con{
+
+}
+
+
+.services-pg{
+
 }
