@@ -94,8 +94,9 @@ font-family: 'Noto Sans', sans-serif;;
   bottom: 0;
   left: 0;
   background: #fafbf5;
-  border: .1px solid black;
-  opacity: .88;
+  border: .1px double black;
+  box-shadow: 8px 9px 3px black;
+  opacity: .68;
   z-index: -1;
 }
 
