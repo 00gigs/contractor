@@ -1,10 +1,8 @@
-require('dotenv').config();
+
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://culwwbltxgukurtjdyng.supabase.co'
+const supabaseKey = ''
+export const supabase = createClient(supabaseUrl, supabaseKey)
 
 
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
-
-const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
