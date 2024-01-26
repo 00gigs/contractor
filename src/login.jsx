@@ -1,25 +1,41 @@
-import { createClient } from "@supabase/supabase-js";
-
-import {supabase} from './supabase/supabaseauth'
-
+import {createClient} from './supabase/authconfig'
+import Cookies from 'universal-cookie';
 import React from 'react'
 
 export const login = () => {
+    
+    async function signUpNewUser(formData) {
+        "use server"
+        const email = formData.get('email')
+        const password = formData.get('password')
+        const { error } = await supabase.auth.signUp({
+          email ,
+          password,
+          Cookies
+        })
+      }
+      
+      async function signInWithEmail() {
+        "use server"
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: 'example@email.com',
+          password: 'example-password'
+        })
+        return('/')
+      }
+      
 
 
-const signUp = async()=>{
-  let { data, error } = await supabase.auth.signUp({
-    email: 'someone@email.com',
-    password: 'lnNaTHLBbVMmVKUtnmlt'
-  })
-}
-
- 
+    
 
 
   return (
     <div>
-      <button type="button" onClick={signUp}
+        <form>
+            <input></input>
+            <input></input>
+        </form>
     </div>
   )
 }
+
